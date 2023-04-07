@@ -567,6 +567,7 @@ background: linear-gradient(4deg, rgb(223, 28, 87) 0%, rgba(252,105,123,1) 100%)
 .objetivo{
     position: relative;
 }
+
 video{
     display: block;
     width: 100%;
@@ -606,14 +607,29 @@ video{
     font-weight: 900;
     line-height: 7rem;
     position: absolute;
-    right: 15%;
+    text-align: center;
+    right: 0%;
     z-index: 100;
 }
 
-
 .contenedor-h2objetivo h2{
-    width: 450px;
+    width: 100%;
 }
+
+@media(min-width:1024px){
+    .contenedor-h2objetivo{
+        text-align: left;
+        right: 15%;
+    }
+
+    .contenedor-h2objetivo h2{
+        width: 450px;
+    }
+
+}
+
+
+
 
 
 .reviews{
@@ -657,14 +673,25 @@ video{
 }
 
 .form{
-    max-width: 600px;
+    max-width: 300px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
+
     place-items: center;
     column-gap: 3rem;
     row-gap: 2rem;
 }
+
+@media(min-width:1024px){
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 600px;
+    }
+
+}
+
 .form div{
     width: 100%;
 }
@@ -782,9 +809,16 @@ textarea{
     display: flex;
     flex-direction: column;
    
-    max-width: 800px;
-    width: 500px;
+    max-width: auto;
+   
     margin: 3rem auto;
+
+}
+@media(min-width:1024px){
+    .container-about-text{
+        max-width: 800px;
+        width: 500px;
+    }
 
 }
 .container-about-text h2{
