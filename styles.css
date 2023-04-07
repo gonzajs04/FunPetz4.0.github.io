@@ -400,6 +400,14 @@ background: linear-gradient(4deg, rgb(223, 28, 87) 0%, rgba(252,105,123,1) 100%)
     justify-content: center;
 }
 
+
+@media(min-width:768px){
+    .ebooks h2{
+        font-size: 2.3rem;
+    }
+
+}
+
 .center{
     text-align: center;
 }
