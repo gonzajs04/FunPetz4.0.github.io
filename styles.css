@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6,a,p,input,form,label,textarea,select{
     font-family: var(--fuente);
 }
 .container-nav{
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 1000000000000;
     background-color: white;
@@ -105,7 +105,7 @@ h1,h2,h3,h4,h5,h6,a,p,input,form,label,textarea,select{
 @media(min-width:1024px){
     
     .container-nav{
-        position: relative;
+        position: fixed;
         flex-direction: row;
   
     }
@@ -387,6 +387,7 @@ background: linear-gradient(4deg, rgb(223, 28, 87) 0%, rgba(252,105,123,1) 100%)
     background-image: linear-gradient(29deg, #C94970 0%, #AB1367 0%, #F53A50 83.88776779174805%, #FC697B 95.43895721435547%);
 }
 .ebooks h2{
+    text-align: center;
     color: #FFFF;
     font-size: 3rem;
     margin: 0;
@@ -781,6 +782,7 @@ textarea{
     height: 100vh;
   
 }
+
 .container-info-figure{
     position: relative;
     display: flex;
@@ -810,14 +812,15 @@ textarea{
     flex-direction: column;
    
     max-width: auto;
-   
-    margin: 3rem auto;
+    padding: 0 1rem;
+    margin: 3rem 2rem;
 
 }
 @media(min-width:1024px){
     .container-about-text{
         max-width: 800px;
         width: 500px;
+        padding: 0;
     }
 
 }
@@ -839,7 +842,16 @@ textarea{
 
 
 .container-about-p{
-    width: 400px;
+    width: 100%;
+
+}
+
+@media(min-width:768px){
+    .container-about-p{
+        width: 400px;
+    }
+
+    
 
 }
 .container-about-text p{

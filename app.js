@@ -34,14 +34,17 @@ function mostrarNav(nav){
 function aparecerPerro(){
     window.addEventListener('scroll',()=>{
         const containerPerro = document.querySelector('.social-media');
-        const imgPerro = document.querySelector('.silueta-perro img');
-        if(containerPerro.getBoundingClientRect().top<=575){
-            setTimeout(()=>{
-                imgPerro.classList.add('asomar');
-            },500)
-          
-         
-        }
+            if(containerPerro){
+                const imgPerro = document.querySelector('.silueta-perro img');
+                if(containerPerro.getBoundingClientRect().top<=575){
+                    setTimeout(()=>{
+                        imgPerro.classList.add('asomar');
+                    },500)
+                  
+                 
+                }
+            }
+     
         
     })
 }
@@ -52,7 +55,10 @@ function añadirAñoActual(){
     const year = date.getFullYear();
   
     const footerP = document.querySelector('.footer p');
-    footerP.textContent = `${year} ©️ by Gonzalo Hernandez Design`
+    if(footerP){
+        footerP.textContent = `${year} ©️ by Gonzalo Hernandez Design`
+
+    }
 }
 
 function cargarElementos(){
