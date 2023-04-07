@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6,a,p,input,form,label,textarea,select{
     width: 100%;
     z-index: 1000000000000;
     background-color: white;
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 0rem;
     display: flex;
 
     align-items: center;
@@ -107,6 +107,7 @@ h1,h2,h3,h4,h5,h6,a,p,input,form,label,textarea,select{
     .container-nav{
         position: fixed;
         flex-direction: row;
+        padding:  1.2rem 1rem;
   
     }
     .navegation{
@@ -510,6 +511,7 @@ background: linear-gradient(4deg, rgb(223, 28, 87) 0%, rgba(252,105,123,1) 100%)
     }
 
     .container-imgunique{
+        width: 450px;
         margin: 0 0;
     }
 
@@ -522,7 +524,7 @@ background: linear-gradient(4deg, rgb(223, 28, 87) 0%, rgba(252,105,123,1) 100%)
 }
 
 .container-imgunique{
-  width: 450px;
+    width: 250px;
   margin: 0 auto;
 }
 
@@ -914,6 +916,7 @@ textarea{
 
 }
 .container-carda{
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
